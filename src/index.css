@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin: 24px 0 16px 0;
+  font-size: 2.5rem;
+}
+
+section {
+  flex: 3;
+  padding: 24px;
+}
+
+aside {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  padding: 24px 16px;
+  border-left: 2px solid #222;
+  background: #fafafa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.individual-plant {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 0;
+}
+
+.individual-plant li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 16px 8px;
+  margin: 0;
+  background: #fff;
+  min-height: 220px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s;
+}
+
+.individual-plant li:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.individual-plant li > * {
+  margin: 4px 0;
+}
+
+.plant-image {
+  font-size: 50pt;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 6px 14px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 2px 4px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+.cart {
+  padding: 0;
+  margin: 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.cart li:last-child {
+  border-bottom: none;
+}
+
+.cart .plant-image {
+  font-size: 2rem;
+  margin-right: 12px;
+}
+
+.cart button {
+  margin-left: 8px;
+  font-size: 1rem;
+  padding: 2px 8px;
+}

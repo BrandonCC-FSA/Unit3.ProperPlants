@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PlantsList from "./PlantsList.jsx";
-import Cart from "./Cart.jsx";
+import PlantsList from "./plants/PlantsList.jsx";
+import Cart from "./Cart/Cart.jsx";
 import PLANTS from "./data.js";
 
 export default function App() {
